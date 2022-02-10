@@ -13,6 +13,12 @@
 		D12DABEE27B4FFB5004240F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12DABEC27B4FFB5004240F5 /* Main.storyboard */; };
 		D12DABF027B4FFB7004240F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12DABEF27B4FFB7004240F5 /* Assets.xcassets */; };
 		D12DABF327B4FFB7004240F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12DABF127B4FFB7004240F5 /* LaunchScreen.storyboard */; };
+		D12DABFF27B5006A004240F5 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DABFE27B5006A004240F5 /* Employee.swift */; };
+		D12DAC0127B50144004240F5 /* EmployeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAC0027B50144004240F5 /* EmployeeData.swift */; };
+		D12DAC0327B5038B004240F5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAC0227B5038A004240F5 /* NetworkService.swift */; };
+		D12DAC0527B522EF004240F5 /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12DAC0427B522EF004240F5 /* Employees.swift */; };
+		D15A5EAB27B53C590067221C /* CreateEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15A5EAA27B53C590067221C /* CreateEmployee.swift */; };
+		D15A5EAD27B53CBB0067221C /* CreateEmployeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15A5EAC27B53CBB0067221C /* CreateEmployeeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		D12DABEF27B4FFB7004240F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D12DABF227B4FFB7004240F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D12DABF427B4FFB7004240F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12DABFE27B5006A004240F5 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		D12DAC0027B50144004240F5 /* EmployeeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeData.swift; sourceTree = "<group>"; };
+		D12DAC0227B5038A004240F5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D12DAC0427B522EF004240F5 /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
+		D15A5EAA27B53C590067221C /* CreateEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployee.swift; sourceTree = "<group>"; };
+		D15A5EAC27B53CBB0067221C /* CreateEmployeeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmployeeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		D12DABE527B4FFB5004240F5 /* Dummy API Example */ = {
 			isa = PBXGroup;
 			children = (
+				D12DABFD27B50023004240F5 /* ViewControllers */,
+				D12DABFC27B4FFF6004240F5 /* Views */,
+				D12DABFB27B4FFEA004240F5 /* Models */,
+				D12DABFA27B4FFE1004240F5 /* WebServices */,
 				D12DABE627B4FFB5004240F5 /* AppDelegate.swift */,
 				D12DABE827B4FFB5004240F5 /* SceneDelegate.swift */,
-				D12DABEA27B4FFB5004240F5 /* ViewController.swift */,
-				D12DABEC27B4FFB5004240F5 /* Main.storyboard */,
 				D12DABEF27B4FFB7004240F5 /* Assets.xcassets */,
 				D12DABF127B4FFB7004240F5 /* LaunchScreen.storyboard */,
 				D12DABF427B4FFB7004240F5 /* Info.plist */,
 			);
 			path = "Dummy API Example";
+			sourceTree = "<group>";
+		};
+		D12DABFA27B4FFE1004240F5 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				D12DAC0227B5038A004240F5 /* NetworkService.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		D12DABFB27B4FFEA004240F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D12DABFE27B5006A004240F5 /* Employee.swift */,
+				D12DAC0427B522EF004240F5 /* Employees.swift */,
+				D12DAC0027B50144004240F5 /* EmployeeData.swift */,
+				D15A5EAA27B53C590067221C /* CreateEmployee.swift */,
+				D15A5EAC27B53CBB0067221C /* CreateEmployeeData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D12DABFC27B4FFF6004240F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D12DABEC27B4FFB5004240F5 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D12DABFD27B50023004240F5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D12DABEA27B4FFB5004240F5 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D12DABEB27B4FFB5004240F5 /* ViewController.swift in Sources */,
+				D12DABFF27B5006A004240F5 /* Employee.swift in Sources */,
+				D15A5EAD27B53CBB0067221C /* CreateEmployeeData.swift in Sources */,
+				D12DAC0127B50144004240F5 /* EmployeeData.swift in Sources */,
+				D15A5EAB27B53C590067221C /* CreateEmployee.swift in Sources */,
 				D12DABE727B4FFB5004240F5 /* AppDelegate.swift in Sources */,
+				D12DAC0527B522EF004240F5 /* Employees.swift in Sources */,
+				D12DAC0327B5038B004240F5 /* NetworkService.swift in Sources */,
 				D12DABE927B4FFB5004240F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
